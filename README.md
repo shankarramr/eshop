@@ -1,3 +1,1 @@
-# README.md
-
-eshop microservice application
+# eshop microservice application
