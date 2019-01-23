@@ -14,11 +14,11 @@
 	<version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-	<name>eshop</name>
-	<description>eshop project parent</description>
+	<name>Eshop</name>
+	<description>Eshop parent project</description>
 
 	<modules>
-        <module>service-discovery</module>
+        <module>discovery-service</module>
     </modules>
 
 	<properties>

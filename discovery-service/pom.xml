@@ -9,12 +9,12 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>service-discovery</artifactId>
+	<artifactId>discovery-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>service discovery</name>
-	<description>service discovery project</description>
+	<name>Discovery Service</name>
+	<description>Discovery Service project</description>
 
 	<dependencies>
 		<dependency>
