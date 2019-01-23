@@ -3,4 +3,9 @@ spring:
     name: user-service
 
 server:
-  port: 5100
+  port: 5101
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5001/eureka/
