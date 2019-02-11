@@ -1,6 +1,12 @@
 spring:
   application:
     name: user-service
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:memory:user?cache=shared
+  jpa:
+    database-platform: com.gmail.shankar2k5.eshop.sqlite3lib.dialect.SQLiteDialect
+    show-sql: true
 
 server:
   port: 5101
