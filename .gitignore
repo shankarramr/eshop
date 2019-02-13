@@ -28,3 +28,6 @@ target
 ### VSCode ###
 .vscode
 *.code-workspace
+
+### Others ###
+memory

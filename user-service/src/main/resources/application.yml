@@ -14,7 +14,7 @@ spring:
     show-sql: true
 
 server:
-  port: 5101
+  port: 5021
 
 eureka:
   client:
