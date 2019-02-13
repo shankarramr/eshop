@@ -1,3 +1,8 @@
+# User Service
+
+custom:
+    eurekaPort: 5001
+
 spring:
   application:
     name: user-service
@@ -14,4 +19,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:5001/eureka/
+      defaultZone: http://localhost:${custom.eurekaPort}/eureka/

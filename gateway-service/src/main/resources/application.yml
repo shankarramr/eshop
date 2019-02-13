@@ -1,0 +1,21 @@
+# Gateway Service
+
+custom:
+    eurekaPort: 5001
+
+spring:
+  application:
+    name: discovery-service
+
+server:
+  port: 5011
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${custom.eurekaPort}/eureka/
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true

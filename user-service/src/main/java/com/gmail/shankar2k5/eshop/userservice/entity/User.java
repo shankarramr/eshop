@@ -1,4 +1,4 @@
-package com.gmail.shankar2k5.eshop.userservice.model;
+package com.gmail.shankar2k5.eshop.userservice.entity;
 
 public class User {
     private long id;
