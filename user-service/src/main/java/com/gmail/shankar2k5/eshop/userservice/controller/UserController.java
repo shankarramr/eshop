@@ -21,13 +21,13 @@ public class UserController {
     UserService userService;
 
     @PostMapping("/{emailAddress}")
-    @ApiOperation(value = "Get an user by email address")
+    @ApiOperation(value = "Find an user by email address")
     public UserDTO findUserByEmailAddress(@PathVariable("emailAddress") String emailAddress) {
         return userService.findUserByEmailAddress(emailAddress);
     }
 
     @PostMapping("/findAllUsers")
-    @ApiOperation(value = "Get all users")
+    @ApiOperation(value = "Find all users")
     public List<UserDTO> findAllUsers() {
         return userService.findAllUsers();
     }
