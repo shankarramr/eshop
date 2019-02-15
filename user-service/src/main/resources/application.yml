@@ -5,11 +5,10 @@ spring:
     name: user-service
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:../user_db
+    url: jdbc:h2:~/user_db
     username: sa
     password: user_pass
   jpa:
-    #database-platform: com.gmail.shankar2k5.eshop.sqlite3lib.dialect.SQLiteDialect
     database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
 

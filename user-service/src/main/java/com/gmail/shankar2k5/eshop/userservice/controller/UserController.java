@@ -1,5 +1,7 @@
 package com.gmail.shankar2k5.eshop.userservice.controller;
 
+import java.util.List;
+
 import com.gmail.shankar2k5.eshop.userservice.dto.UserDTO;
 import com.gmail.shankar2k5.eshop.userservice.service.UserService;
 
@@ -20,8 +22,14 @@ public class UserController {
 
     @PostMapping("/{emailAddress}")
     @ApiOperation(value = "Get an user by email address")
-    public UserDTO findByEmailAddress(@PathVariable("emailAddress") String emailAddress) {
-        return userService.findByEmailAddress(emailAddress);
+    public UserDTO findUserByEmailAddress(@PathVariable("emailAddress") String emailAddress) {
+        return userService.findUserByEmailAddress(emailAddress);
+    }
+
+    @PostMapping("/findAllUsers")
+    @ApiOperation(value = "Get all users")
+    public List<UserDTO> findAllUsers() {
+        return userService.findAllUsers();
     }
 
 }
