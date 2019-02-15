@@ -1,8 +1,5 @@
 # Gateway Service
 
-custom:
-    eurekaPort: 5001
-
 spring:
   application:
     name: discovery-service
@@ -19,3 +16,6 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
+
+custom:
+    eurekaPort: 5001

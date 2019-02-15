@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -16,7 +18,8 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/{username}")
+    @PostMapping("/{emailAddress}")
+    @ApiOperation(value = "Get an user by email address")
     public UserDTO findByEmailAddress(@PathVariable("emailAddress") String emailAddress) {
         return userService.findByEmailAddress(emailAddress);
     }
