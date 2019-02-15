@@ -29,5 +29,8 @@ target
 .vscode
 *.code-workspace
 
+### H2 ###
+*.trace.db
+
 ### Others ###
 memory
