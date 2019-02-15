@@ -1,16 +1,16 @@
 # User Service
 
-custom:
-    eurekaPort: 5001
-
 spring:
   application:
     name: user-service
   datasource:
-    driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:memory:user?cache=shared
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:./user
+    username: sa
+    password: user_pass
   jpa:
-    database-platform: com.gmail.shankar2k5.eshop.sqlite3lib.dialect.SQLiteDialect
+    #database-platform: com.gmail.shankar2k5.eshop.sqlite3lib.dialect.SQLiteDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
 
 server:
@@ -20,3 +20,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:${custom.eurekaPort}/eureka/
+
+custom:
+    eurekaPort: 5001

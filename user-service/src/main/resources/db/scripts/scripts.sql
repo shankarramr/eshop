@@ -1,7 +1,7 @@
 /* USER Table*/
 CREATE TABLE USER
 (
-    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     EMAIL_ADDRESS VARCHAR(50) UNIQUE NOT NULL,
     FIRST_NAME VARCHAR(30) NOT NULL,
     LAST_NAME VARCHAR(30) NOT NULL,
@@ -20,7 +20,7 @@ VALUES
 (
     'admin@email.com',
     'admin',
-    'admin ln',
+    'admin LN',
     'admin@123',
     1
 );

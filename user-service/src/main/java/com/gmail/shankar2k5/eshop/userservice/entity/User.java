@@ -1,5 +1,11 @@
 package com.gmail.shankar2k5.eshop.userservice.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class User {
     private long id;
     private String emailAddress;
@@ -11,6 +17,8 @@ public class User {
     /**
      * @return the id
      */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }

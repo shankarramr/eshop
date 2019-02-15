@@ -1,1 +1,0 @@
-sqlite3 eshop_user.db
