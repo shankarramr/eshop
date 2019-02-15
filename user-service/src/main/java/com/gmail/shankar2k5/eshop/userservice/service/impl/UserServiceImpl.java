@@ -4,6 +4,7 @@ import com.gmail.shankar2k5.eshop.userservice.dto.UserDTO;
 import com.gmail.shankar2k5.eshop.userservice.repository.UserRepository;
 import com.gmail.shankar2k5.eshop.userservice.service.UserService;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO findByEmailAddress(String emailAddress) {
-        return userRepository.findByEmailAddress(emailAddress);
+        return new ModelMapper().map(userRepository.findByEmailAddress(emailAddress), UserDTO.class);
     }
 
 }
