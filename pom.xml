@@ -26,6 +26,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2.1.0.RELEASE</spring-cloud.version>
+		<spring-swagger.version>2.9.2</spring-swagger.version>
 	</properties>
 
 	<!-- Common dependencies -->
