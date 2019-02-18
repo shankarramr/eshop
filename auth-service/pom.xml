@@ -27,5 +27,17 @@
 			<artifactId>spring-cloud-starter-oauth2</artifactId>
 			<version>${spring-cloud.version}</version>
 		</dependency>
+
+		<dependency>
+      		<groupId>org.projectlombok</groupId>
+      		<artifactId>lombok</artifactId>
+      		<scope>compile</scope>
+		</dependency>
+
+    	<dependency>
+      		<groupId>com.h2database</groupId>
+      		<artifactId>h2</artifactId>
+      		<scope>runtime</scope>
+    	</dependency>
 	</dependencies>
 </project>
