@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
         if (user != null) {
             return new ModelMapper().map(user, UserDTO.class);
         }
-        throw new UserNotFoundException("User not found");
+        throw new UserNotFoundException("User not found!");
     }
 
     @Override
@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
             }.getType();
             return new ModelMapper().map(users, listType);
         }
-        return null;
+        throw new UserNotFoundException("No registered users!");
     }
 
 }

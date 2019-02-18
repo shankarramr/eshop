@@ -5,12 +5,14 @@ spring:
     name: user-service
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/user_db
+    url: jdbc:h2:./${custom.db.location}/${custom.db.name};IFEXISTS=TRUE
     username: sa
     password: user_pass
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
+    hibernate:
+      ddl-auto: update
 
 server:
   port: 5021
@@ -22,3 +24,6 @@ eureka:
 
 custom:
     eurekaPort: 5001
+    db:
+      location: db/user-service-db/
+      name: user_db
