@@ -17,12 +17,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.gmail.shankar2k5.eshop</groupId>
-			<artifactId>sqlite3-lib</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>${spring-cloud.version}</version>
