@@ -25,5 +25,5 @@ eureka:
 custom:
     eurekaPort: 5001
     db:
-      location: db/user-service-db/
+      location: db/user-db/
       name: user_db
