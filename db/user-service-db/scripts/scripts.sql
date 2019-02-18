@@ -15,8 +15,8 @@ INSERT INTO USER
     FIRST_NAME,
     LAST_NAME,
     PASSWORD,
-    TYPE,
-    STATUS
+    TYPE, -- 1 - Admin, 2 - User
+    STATUS -- 1 - Active, 0 - Inactive
 )
 VALUES
 (
