@@ -5,7 +5,7 @@ spring:
     name: auth-service
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:./${custom.db.location}/${custom.db.name};IFEXISTS=TRUE
+    url: jdbc:h2:../${custom.db.location}/${custom.db.name};IFEXISTS=TRUE
     username: sa
     password: auth_pass
   jpa:
