@@ -2,7 +2,7 @@ package com.gmail.shankar2k5.eshop.userservice.controller;
 
 import java.util.List;
 
-import com.gmail.shankar2k5.eshop.userservice.dto.UserDTO;
+import com.gmail.shankar2k5.eshop.common.dto.userservice.UserDTO;
 import com.gmail.shankar2k5.eshop.userservice.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;

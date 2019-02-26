@@ -3,7 +3,7 @@ package com.gmail.shankar2k5.eshop.userservice.service.impl;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import com.gmail.shankar2k5.eshop.userservice.dto.UserDTO;
+import com.gmail.shankar2k5.eshop.common.dto.userservice.UserDTO;
 import com.gmail.shankar2k5.eshop.userservice.entity.User;
 import com.gmail.shankar2k5.eshop.userservice.exception.UserNotFoundException;
 import com.gmail.shankar2k5.eshop.userservice.repository.UserRepository;
